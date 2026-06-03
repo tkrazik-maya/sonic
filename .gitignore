@@ -1,0 +1,29 @@
+# Audio — too large for git
+samples/
+*.wav
+*.aiff
+*.mp3
+*.flac
+*.aif
+
+# Trained models
+models/
+*.pt
+*.ts
+*.onnx
+
+# Ableton
+*.als
+*.alp
+*.adv
+Backup/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store

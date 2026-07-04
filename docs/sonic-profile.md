@@ -51,11 +51,11 @@ This is the structure that should run through the whole system, Orchestra and Ki
   5–8. Mode-specific: AI morph/temperature in Orchestra mode, call-and-response intensity/AI response speed in Kirtan mode
 - **Touchstrip and scene launch stay mode-level** (overall dynamics, structural transitions) — not tied to a single energy.
 
-### Orchestra mode (#8)
-Each energy quadrant = one RAVE-trained player whose vinyl source matches that energy's acoustic signature (see sourcing table below), not an arbitrary vinyl-source-per-bank assignment. Four coherent voices — Saraswati, Shiva, Ganesha, Krishna/Hanuman — rather than four unrelated timbres.
+### Orchestra mode (#8) — vinyl/AI is the point
+Each energy quadrant = one RAVE-trained player whose vinyl source matches that energy's acoustic signature (see sourcing table below), not an arbitrary vinyl-source-per-bank assignment. Four coherent voices — Saraswati, Shiva, Ganesha, Krishna/Hanuman — rather than four unrelated timbres. Orchestra mode's whole premise depends on the vinyl → Demucs → RAVE pipeline, so that dependency is unavoidable here.
 
-### Kirtan mode (#17)
-Each energy quadrant = a drone root + tala pattern + call-and-response voice tuned to that energy's tempo and instrumentation range (see table below). The raga/tala choices in the Kirtan spec (#13) should be defined per energy, not as a flat list.
+### Kirtan mode (#17) — instrument path first, AI is an enhancement
+Kirtan mode does **not** need to wait on vinyl/RAVE to be playable. Each energy quadrant = a drone root (harmonium-style sampler/VST patch) + tala pattern (Drum Rack of tabla/hand-drum one-shots) + a melodic voice (bansuri for the Krishna/Hanuman bank), all sourced off-the-shelf — see #22. This gets a fully playable instrument onto Push 2.0 without touching Demucs or training a single RAVE model. AI call-and-response (#16) and vinyl-derived texture layer in afterward, on top of a working instrument — they are not prerequisites for one. The raga/tala choices in the Kirtan spec (#13) should still be defined per energy (see table below), just built from instruments first.
 
 ## Part 4 — Corpus sourcing per energy
 
@@ -74,10 +74,18 @@ Each energy quadrant = a drone root + tala pattern + call-and-response voice tun
 | Vocal style | Deep, gravelly, chanting, communal, slow-building | High-pitched, operatic, fast-paced, sharp, solo-focused |
 | Tempo | Vilambit (slow) to madhya (medium) | Drut (fast) or erratic/changing time signatures |
 
-## Part 5 — Applying this to open issues
+## Part 5 — Two build tracks, not one
 
-- **#4 / #6** (vinyl processing / first RAVE model): source the first 1-2 records against the Ganesha or Krishna/Hanuman signature — most forgiving for a first model, and most central to the identity (Krishna/Hanuman especially, since it's the anchor Krishna Das lineage this whole project sits in).
-- **#8** (Orchestra Push layout): replace "one source per bank" with the four-energy-quadrant structure above.
-- **#13** (Kirtan spec): define ragas, tala cycles, and drone roots per energy, not as a flat list.
-- **#14 / #15 / #16** (drone / tala / call-and-response): each should be parameterized per energy (tempo range, register bias, voice character) rather than a single global setting.
-- **#17** (Kirtan Push layout): apply the same four-quadrant, color-coded structure as #8 so the two modes share a physical language.
+**Instrument track (start here — no vinyl, playable fast):**
+- **#22** Kirtan instrument palette (harmonium drone, tabla, bansuri per energy — off-the-shelf sounds)
+- **#14 / #15** Drone and tala layers, built directly on #22's instruments, parameterized per energy (tempo range, register bias) rather than a single global setting
+- **#17** Kirtan Push layout — the four-quadrant, color-coded structure, wired to the #22 instruments
+- **#13** Kirtan spec — ragas, tala cycles, drone roots defined per energy, targeting the instrument palette
+
+**AI/vinyl track (runs in parallel or after, feeds Orchestra mode + optional Kirtan enhancement):**
+- **#1 / #2** Signal chain, Demucs install
+- **#4 / #6** First vinyl processed, first RAVE model — source against the Ganesha or Krishna/Hanuman signature first; most forgiving, and most central to the identity
+- **#8** Orchestra Push layout — the four-energy-quadrant structure, one RAVE player per energy
+- **#16** Kirtan call-and-response — an AI voice layered onto the working instrument from the track above, not a co-requisite for it
+
+Do not let the AI/vinyl track gate the instrument track. A fully playable, four-energy Kirtan instrument on Push 2.0 should exist before any vinyl has been processed.

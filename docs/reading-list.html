@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading List: Sonic — Deities, Sound, and the Kirtan Fusion Practice</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-elev: #151515;
+    --bg-card: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --text-dim: #a0a0a0;
+    --text-faint: #707070;
+    --accent: #f59e0b;
+    --accent-dim: #b77610;
+    --tag-bg: #2a1f0a;
+    --primary-bg: #0a1a2a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 15px;
+    padding: 0;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 48px 32px 120px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 32px; margin-bottom: 48px; }
+  h1 { font-size: 32px; font-weight: 600; color: var(--accent); letter-spacing: -0.02em; margin-bottom: 12px; }
+  .subtitle { color: var(--text-dim); font-size: 16px; max-width: 680px; }
+  .subtitle em { color: var(--text); font-style: italic; }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 48px 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .section-lead {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .book {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    transition: border-color 0.15s;
+  }
+  .book:hover { border-color: var(--accent-dim); }
+  .book.top-pick { border-color: var(--accent); background: var(--primary-bg); }
+  .book.top-pick::before {
+    content: "IF YOU READ ONE";
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .book-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+  .book-meta {
+    font-size: 13px;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+  }
+  .book-why {
+    color: var(--text-dim);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .book-why strong { color: var(--text); font-weight: 600; }
+  .tags { margin-top: 10px; }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    background: var(--tag-bg);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .intro-card {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 8px;
+  }
+  .intro-card p + p { margin-top: 12px; }
+  .intro-card em { color: var(--accent); font-style: normal; font-weight: 500; }
+  footer {
+    margin-top: 72px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Reading List: Sonic — Deities, Sound, and the Kirtan Fusion Practice</h1>
+  <p class="subtitle">
+    Curated for the specific thing you're building: the Sonic/kirtan-push instrument, the energy-registry system (Saraswati, Shiva, Ganesha, Krishna/Hanuman, Durga), and the Krishna Das-style song-pairing practice. Not a general survey of Hindu music or philosophy — each entry ties directly to a decision the project depends on.
+  </p>
+</header>
+
+<div class="intro-card">
+  <p>Organized by the vein it opens up. Section 1 is the practice itself — read this first, since it's the actual method you're extending. Sections 2–3 are the technical substrate behind the energy matrix (<code>docs/sonic-energy-matrix.xlsx</code> in the sonic repo). Section 4 is primary scripture, useful if you want to go straight to the source of a specific stotra.</p>
+  <p>One filter applied throughout: <em>primary sources and practitioner accounts over secondhand summary</em>, wherever a good one exists.</p>
+</div>
+
+<h2>1. The lineage and the fusion practice</h2>
+<p class="section-lead">
+  This is the actual method behind the "pair a famous song with a complementary kirtan" concept — not an analogy to it. Krishna Das's own path, and the guru at the center of it, are the reason Krishna and Hanuman merged into one bank in the project's energy registry rather than staying separate.
+</p>
+
+<div class="book top-pick">
+  <div class="book-title"><a href="https://www.amazon.com/Chants-Lifetime-Searching-Heart-Gold/dp/1401931375" target="_blank" rel="noopener">Chants of a Lifetime: Searching for a Heart of Gold</a></div>
+  <div class="book-meta">Krishna Das · Hay House, 2010 · ~200pp, book + CD</div>
+  <div class="book-why">
+    His own memoir — the New York Times called him "the chant master of American yoga." Traces the exact arc this project keeps referencing: a rock 'n' roll kid who meets Ram Dass, goes to India, meets Neem Karoli Baba, and comes back years later fusing that devotion with Western musical sensibility. This is the primary source for the whole song-pairing concept, not a secondary account of it. <strong>Read this first.</strong>
+    <div class="tags"><span class="tag">Primary source</span><span class="tag">Direct method</span></div>
+  </div>
+</div>
+
+<div class="book">
+  <div class="book-title"><a href="https://www.amazon.com/Be-Here-Now-Ram-Dass/dp/0517543052" target="_blank" rel="noopener">Be Here Now</a></div>
+  <div class="book-meta">Ram Dass · Lama Foundation, 1971 · ~400pp</div>
+  <div class="book-why">
+    The foundational text of the whole lineage — Ram Dass's account of leaving Harvard psychology behind to find Neem Karoli Baba in India. This is the book Krishna Das heard about in 1968 that sent him to India in the first place. <strong>Explains why the project's own repo description ("Neem Karoli / Ram Dass lineage") is doing real work, not just flavor text.</strong>
+    <div class="tags"><span class="tag">Foundational</span><span class="tag">Countercultural classic</span></div>
+  </div>
+</div>
+
+<div class="book">
+  <div class="book-title"><a href="https://www.amazon.com/Miracle-Love-Stories-About-Karoli/dp/0525482504" target="_blank" rel="noopener">Miracle of Love: Stories about Neem Karoli Baba</a></div>
+  <div class="book-meta">Ram Dass (compiler) · Dutton, 1979 · ~500pp</div>
+  <div class="book-why">
+    A collected oral history of Neem Karoli Baba from dozens of devotees — the guru both Ram Dass and Krishna Das orbit. Gives direct texture on why devotion in this lineage doesn't separate Krishna, Hanuman, and other deities into competing tracks — it's read as one continuous practice of love. <strong>Explains the Krishna/Hanuman merge in the energy registry from the inside.</strong>
+    <div class="tags"><span class="tag">Oral history</span><span class="tag">Context</span></div>
+  </div>
+</div>
+
+<h2>2. The tantric chakra / bija-mantra / sound system</h2>
+<p class="section-lead">
+  The primary source behind the matrix's Bija Mantra, Chakra, and Element columns. Most yoga-studio-circuit "chakra charts" you'll find online are diluted several generations from this text — worth going to the root once, even if the language is dense.
+</p>
+
+<div class="book top-pick">
+  <div class="book-title"><a href="https://www.amazon.com/Serpent-Power-Secrets-Tantric-Shaktic/dp/0486230589" target="_blank" rel="noopener">The Serpent Power: The Secrets of Tantric and Shaktic Yoga</a></div>
+  <div class="book-meta">Arthur Avalon (Sir John Woodroffe) · orig. 1919, Dover ed. ISBN 9780486230580 · ~500pp</div>
+  <div class="book-why">
+    Woodroffe's translation and commentary on the <em>Sat-Cakra-Nirupana</em> ("Description of the Six Chakras") and the shorter <em>Paduka-Panchaka</em> — the actual Sanskrit tantric texts that assign a bija mantra, presiding deity, and element to each chakra. This is the primary source the matrix's chakra/bija/element columns trace back to, several removes down. Dense and archaic in places, but it's the real document rather than a modern summary of it. <strong>The one to own if you want the matrix's foundation, not just its output.</strong>
+    <div class="tags"><span class="tag">Primary source</span><span class="tag">Dense</span></div>
+  </div>
+</div>
+
+<div class="book">
+  <div class="book-title"><a href="https://www.amazon.com/Kundalini-Tantra-Re-print-Golden-Jubilee/dp/8185787158" target="_blank" rel="noopener">Kundalini Tantra</a></div>
+  <div class="book-meta">Swami Satyananda Saraswati · Bihar School of Yoga, 1984 · ~450pp</div>
+  <div class="book-why">
+    A modern, practice-oriented synthesis of the same chakra/bija/deity system, written for a yoga-practitioner audience rather than a Sanskritist one. Easier entry point than Woodroffe if the archaic translation style is a barrier — read this first, then go to <em>The Serpent Power</em> if you want the primary text underneath it.
+    <div class="tags"><span class="tag">Accessible</span><span class="tag">Practice-oriented</span></div>
+  </div>
+</div>
+
+<h2>3. Raga, rasa, and time-of-day theory</h2>
+<p class="section-lead">
+  The reference discipline behind the matrix's Raga, Rasa, and Time/Thaat columns — this is where the Bhairav/Shiva, Yaman/Krishna, Hamsadhwani/Ganesha, and Durga raga associations actually come from, with the musicological detail the web-search summaries in the matrix necessarily compressed.
+</p>
+
+<div class="book top-pick">
+  <div class="book-title"><a href="https://www.amazon.com/Raga-Guide-Survey-Hindustani-Ragas/dp/0954397606" target="_blank" rel="noopener">The Raga Guide: A Survey of 74 Hindustani Ragas</a></div>
+  <div class="book-meta">Joep Bor, Suvarnalata Rao, Wim van der Meer, Jane Harvey · Nimbus Records, 1999 · book + 4 CDs</div>
+  <div class="book-why">
+    The standard modern reference for raga-by-raga detail: time of day, mood/rasa, ascent-descent structure, historical notes — with recordings by Hariprasad Chaurasia (flute), Buddhadev DasGupta (sarod), and others so you can hear each raga alongside reading about it. Directly covers Bhairav (Shiva), Yaman (Krishna), and Durga — the exact ragas in the project's matrix. <strong>The single best next step if you want to verify or deepen any raga row in the matrix.</strong>
+    <div class="tags"><span class="tag">Reference</span><span class="tag">Includes recordings</span></div>
+  </div>
+</div>
+
+<div class="book">
+  <div class="book-title"><a href="https://www.amazon.com/Raga-Mala-Autobiography-Ravi-Shankar/dp/1566491045" target="_blank" rel="noopener">Raga Mala: The Autobiography of Ravi Shankar</a></div>
+  <div class="book-meta">Ravi Shankar, ed. George Harrison, with Oliver Craske · Genesis Publications, 1997 / Welcome Rain, 1999 · ~350pp</div>
+  <div class="book-why">
+    A working musician's lived account of raga discipline, guru-shishya training, and what it actually feels like to build a life around this tradition — narrated in the "raga mala" style itself (one recollection sparking the next, always circling back to a theme). Less technical than The Raga Guide, more useful for the felt sense of what you're building toward as a performer.
+    <div class="tags"><span class="tag">Practitioner memoir</span><span class="tag">Narrative</span></div>
+  </div>
+</div>
+
+<h2>4. Primary scripture</h2>
+<p class="section-lead">
+  If you want to go straight to the source rather than a secondary description — this is where the Argala Stotram itself lives, and where Krishna's own teaching on bhakti (devotion) comes from.
+</p>
+
+<div class="book top-pick">
+  <div class="book-title"><a href="https://www.amazon.com/Praise-Goddess-Devimahatmya-Its-Meaning/dp/089254080X" target="_blank" rel="noopener">In Praise of the Goddess: The Devimahatmya and Its Meaning</a></div>
+  <div class="book-meta">Devadatta Kali (trans.) · Nicolas-Hays, 2003 · ~350pp</div>
+  <div class="book-why">
+    A modern translation and commentary on the <em>Devi Mahatmya</em> (also called <em>Durga Saptashati</em>) — the scripture the Argala Stotram is drawn from, the text that started the whole open-registry pivot in this project. The translator, an initiate in the Ramakrishna-Vivekananda lineage, combines Western scholarly apparatus with an insider's devotional read. <strong>Read the Argala Stotram itself here, in context, rather than as an isolated YouTube clip.</strong>
+    <div class="tags"><span class="tag">Primary scripture</span><span class="tag">Source of Argala Stotram</span></div>
+  </div>
+</div>
+
+<div class="book">
+  <div class="book-title"><a href="https://www.amazon.com/Bhagavad-Gita-2nd-Eknath-Easwaran/dp/1586380192" target="_blank" rel="noopener">The Bhagavad Gita</a></div>
+  <div class="book-meta">trans. Eknath Easwaran · Nilgiri Press, 2007 (widely available) · ~300pp</div>
+  <div class="book-why">
+    Krishna's own teaching on bhakti yoga — the path of devotion — delivered as a dialogue rather than doctrine. Easwaran's translation is the most commonly recommended accessible entry point (clear modern English, solid introduction, no Sanskrit required). Directly relevant to the Krishna half of the merged Krishna/Hanuman bank.
+    <div class="tags"><span class="tag">Foundational</span><span class="tag">Accessible translation</span></div>
+  </div>
+</div>
+
+<footer>
+  Compiled 2026-07-07 for the Sonic / kirtan-push project. Cross-reference: <code>docs/sonic-profile.md</code> and <code>docs/sonic-energy-matrix.xlsx</code> in the <a href="https://github.com/tkrazik-maya/sonic">tkrazik-maya/sonic</a> repo (PR #20).
+</footer>
+
+</div>
+</body>
+</html>

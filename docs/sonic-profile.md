@@ -22,11 +22,11 @@ He doesn't consume music, he **occupies** it — treats a track as three-dimensi
 
 **Practical takeaway:** the vinyl corpus for Orchestra mode should not be limited to devotional/Indian classical records. Eno- and Hopkins-style ambient, Elbow-style choral/brass, and even Deftones/Queen-adjacent atmospheric material are all valid, on-identity source material.
 
-## Part 2 — The energy registry (open, not fixed at four)
+## Part 2 — Sound registers, discovered and labeled through pairing
 
-This is the structure that should run through the whole system, Orchestra and Kirtan alike — but it is a **growing registry**, not a fixed set. New energies get added whenever a real song pairing (Part 3) surfaces one that doesn't fit an existing entry. Do not force a new deity into an existing bank just to keep the count small — that was the mistake made with Krishna and Durga earlier in this doc's history; Krishna correctly merged into Hanuman (same lineage, same practice), Durga did not (she's a genuinely distinct register) and got her own entry instead.
+The real underlying structure isn't a list of deities — it's a small set of **sonic registers** (bright/fluid, still/mathematical, heavy/grounded, warm/communal, fierce/driving...) that recur across all music, devotional or secular. A deity name is just the label that attaches once a song pairing (Part 3) reveals which register it occupies. The table below is a **discovery log, not a taxonomy** — treat it as "registers found so far," and expect it to keep growing as you pair more songs. Don't force a new deity into an existing row just to keep the list short — that was the near-miss with Durga; she's a genuinely distinct register from anything already logged, so she got her own row instead of being squeezed into Krishna/Hanuman.
 
-| Energy | Traditional domain | Acoustic signature | Devotional exemplar | Secular exemplar | Color |
+| Energy (label) | Traditional domain | Acoustic signature | Devotional exemplar | Secular exemplar | Color |
 |---|---|---|---|---|---|
 | **Saraswati** | voice, creativity, clarity (Vāc, the veena) | bright, high, fluid, air/water, intellectually complex | Classical Saraswati ragas, veena/sitar | Queen's melodic/harmonic density | White |
 | **Shiva** | pulse & stillness | mathematical, repetitive, still — the antidote to chaos | Shiva Tandava Stotra, Om Namah Shivaya loops, damaru | Brian Eno's static ambient architecture | Ash / blue-grey |
@@ -52,27 +52,25 @@ This is exactly what Krishna Das himself does, and it's what generates new entri
 
 **This is instrument-track work, not AI/vinyl-track work.** Building a pairing means recreating or referencing the secular song's chord/rhythm bed (in Ableton, from a real recording or a recreated arrangement) and layering live chant/call-and-response over or into it — no vinyl processing or RAVE training required. It belongs alongside #22.
 
-## Part 4 — Structural mapping onto Push 2.0
+## Part 4 — What Push 2.0 is actually for
 
-**Both Orchestra mode and Kirtan mode organize around the energy registry, but the layout must support a growing, not fixed, set of energies.** A hardcoded 4-quadrant grid (the original plan, and the original #8/#17 proposals) breaks the moment a 5th energy like Durga shows up. Instead:
+Push 2.0 is not a taxonomy display for the sound-register system. Its job is three concrete things:
 
-- **Energy bank select:** use Push 2's 8 Scene Launch buttons (or Track Select buttons) as an energy selector — one button per registered energy, lit in that energy's color, with headroom for up to 8 before needing a second page. Pressing one loads that energy into the active pad grid. This scales as the registry grows (currently 5: Saraswati, Shiva, Ganesha, Krishna/Hanuman, Durga) without redesigning the layout each time.
-- **Active pad grid:** the 8x8 pad grid always shows the *currently selected* energy's content — variations/intensity levels for its player (Orchestra) or drone+tala+pairing combos (Kirtan) — lit in that energy's color. This replaces the old "fixed quadrant" idea entirely.
-- **Encoders (consistent across both modes, apply to whichever energy is active):**
-  1. Energy crossfade — blend the active energy with the previously selected one, for transitions between banks
-  2. Tempo (vilambit → drut)
-  3. Register/density bias (pulls a bank toward brightness or grounding — this is the control that lets you do the "Krishna Das move," e.g. pull Saraswati down into Shiva/Krishna-Hanuman territory, or sweep Krishna/Hanuman between bansuri sweetness and wall-of-voices weight)
-  4. Drone depth
-  5–8. Mode-specific: AI morph/temperature in Orchestra mode, call-and-response intensity/AI response speed in Kirtan mode
-- **Touchstrip and scene launch (when not used for energy select) stay mode-level** (overall dynamics, structural transitions) — not tied to a single energy.
+1. **Hold the instruments** — the harmonium drone, tabla, bansuri, and whatever else #22 builds out.
+2. **Hold the pairings** — the growing repertoire of secular+devotional combinations from Part 3, ready to trigger and play.
+3. **Let you play and compose** — perform live, shape a pairing in real time, build new arrangements.
+
+The sound-register labels (Part 2) are metadata that organizes the pairing log — they help you find and group repertoire, and they're a useful lens for color-coding pads when it's convenient — but they should **not** dictate a fixed hardware scheme up front. The earlier plan (8 Scene Launch buttons as a hardcoded energy selector, one slot per deity) got the causality backwards: it designed the controller before there was any real playing to learn from.
+
+**Better approach:** build the instrument palette (#22) and get a couple of pairings actually playable first. Only then figure out, from what you find yourself reaching for mid-performance, what deserves a dedicated pad, encoder, or button — tempo? a crossfade between two pairings? switching which instrument is live? Let the Push layout (#8, #17) get documented as it's discovered through use, not specified in advance. Revisit this doc once you've played a few sessions and update it with whatever mapping actually emerged.
 
 ### Orchestra mode (#8) — vinyl/AI is the point
-Each energy bank = one RAVE-trained player whose vinyl source matches that energy's acoustic signature (see sourcing table below), not an arbitrary vinyl-source-per-bank assignment. Orchestra mode's whole premise depends on the vinyl → Demucs → RAVE pipeline, so that dependency is unavoidable here.
+Each register's RAVE player draws from vinyl matching its acoustic signature (see sourcing table below). Orchestra mode's whole premise depends on the vinyl → Demucs → RAVE pipeline, so that dependency is unavoidable here — but the actual Push mapping for triggering/blending players should still follow the "discover through playing" approach above, not a pre-specified layout.
 
 ### Kirtan mode (#17) — instrument path first, AI is an enhancement
-Kirtan mode does **not** need to wait on vinyl/RAVE to be playable. Each energy bank = a drone root (harmonium-style sampler/VST patch) + tala pattern (Drum Rack of tabla/hand-drum one-shots) + a melodic voice (bansuri for the Krishna/Hanuman bank) + any logged song pairings for that energy (Part 3), all sourced/built off-the-shelf — see #22. This gets a fully playable instrument onto Push 2.0 without touching Demucs or training a single RAVE model. AI call-and-response (#16) and vinyl-derived texture layer in afterward, on top of a working instrument — they are not prerequisites for one. The raga/tala choices in the Kirtan spec (#13) should still be defined per energy (see table below), just built from instruments first.
+Kirtan mode does **not** need to wait on vinyl/RAVE to be playable. Build the drone root (harmonium-style sampler/VST patch), tala pattern (Drum Rack of tabla/hand-drum one-shots), and melodic voice (bansuri) per register — see #22 — plus whatever song pairings you've logged (Part 3). This gets a fully playable instrument without touching Demucs or training a single RAVE model. AI call-and-response (#16) and vinyl-derived texture layer in afterward, on top of a working instrument — they are not prerequisites for one. The raga/tala choices in the Kirtan spec (#13) should still be defined per register (see table below), just built from instruments first.
 
-## Part 5 — Corpus sourcing per energy
+## Part 5 — Corpus sourcing per register
 
 | Energy | Look for | Avoid / use sparingly |
 |---|---|---|
@@ -95,13 +93,13 @@ Kirtan mode does **not** need to wait on vinyl/RAVE to be playable. Each energy 
 **Instrument track (start here — no vinyl, playable fast):**
 - **#22** Kirtan instrument palette (harmonium drone, tabla, bansuri per energy — off-the-shelf sounds)
 - **#14 / #15** Drone and tala layers, built directly on #22's instruments, parameterized per energy (tempo range, register bias) rather than a single global setting
-- **#17** Kirtan Push layout — the energy bank-select structure (Part 4), wired to the #22 instruments
-- **#13** Kirtan spec — ragas, tala cycles, drone roots defined per energy, plus the growing song-pairing log (Part 3)
+- **#17** Kirtan Push layout — documented from what emerges through playing (Part 4), wired to the #22 instruments
+- **#13** Kirtan spec — ragas, tala cycles, drone roots defined per register, plus the growing song-pairing log (Part 3)
 
 **AI/vinyl track (runs in parallel or after, feeds Orchestra mode + optional Kirtan enhancement):**
 - **#1 / #2** Signal chain, Demucs install
 - **#4 / #6** First vinyl processed, first RAVE model — source against the Ganesha or Krishna/Hanuman signature first; most forgiving, and most central to the identity
-- **#8** Orchestra Push layout — the energy bank-select structure (Part 4), one RAVE player per energy
+- **#8** Orchestra Push layout — documented from what emerges through playing (Part 4), one RAVE player per register
 - **#16** Kirtan call-and-response — an AI voice layered onto the working instrument from the track above, not a co-requisite for it
 
-Do not let the AI/vinyl track gate the instrument track. A fully playable, multi-energy Kirtan instrument on Push 2.0 should exist before any vinyl has been processed.
+Do not let the AI/vinyl track gate the instrument track. A fully playable Kirtan instrument on Push 2.0 should exist before any vinyl has been processed — and the Push layout itself should come from playing sessions, not from a spec written in advance.
